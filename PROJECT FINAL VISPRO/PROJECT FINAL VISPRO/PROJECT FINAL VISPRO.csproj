@@ -33,11 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data.EntityFramework, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +55,144 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReportCrystal2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCrystal2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCrystal3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCrystal3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportGuest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportGuest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportAnnex.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAnnex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportBougenville.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBougenville.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCrystal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportEdel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportEdel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportGenset.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportGenset.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportJasmineI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportJasmineI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportJasmineII.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportJasmineII.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportMahasiswa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMahasiswa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormCRAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRAnnex.Designer.cs">
+      <DependentUpon>FormCRAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRBougenville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRBougenville.Designer.cs">
+      <DependentUpon>FormCRBougenville.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRCrystal.Designer.cs">
+      <DependentUpon>FormCRCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRCrystal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRCrystal2.Designer.cs">
+      <DependentUpon>FormCRCrystal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRCrystal3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRCrystal3.Designer.cs">
+      <DependentUpon>FormCRCrystal3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCREdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCREdel.Designer.cs">
+      <DependentUpon>FormCREdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRGenset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRGenset.Designer.cs">
+      <DependentUpon>FormCRGenset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRGUest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRGUest.Designer.cs">
+      <DependentUpon>FormCRGUest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRJasmineI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRJasmineI.Designer.cs">
+      <DependentUpon>FormCRJasmineI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRJasmineII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRJasmineII.Designer.cs">
+      <DependentUpon>FormCRJasmineII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRMahasiswa.Designer.cs">
+      <DependentUpon>FormCRMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormCrystal1.2.3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormCrystal1.2.3.Designer.cs">
+      <DependentUpon>FormDormCrystal1.2.3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDashAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,17 +205,77 @@
     <Compile Include="FormDashUserManage.Designer.cs">
       <DependentUpon>FormDashUserManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDashUserManageBooking.cs">
+    <Compile Include="FormDashUserManageDataDiri1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashUserManageBooking.Designer.cs">
-      <DependentUpon>FormDashUserManageBooking.cs</DependentUpon>
+    <Compile Include="FormDashUserManageDataDiri1.Designer.cs">
+      <DependentUpon>FormDashUserManageDataDiri1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDashUserManageDataDiri.cs">
+    <Compile Include="FormDorm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashUserManageDataDiri.Designer.cs">
-      <DependentUpon>FormDashUserManageDataDiri.cs</DependentUpon>
+    <Compile Include="FormDorm.Designer.cs">
+      <DependentUpon>FormDorm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormAnnex.Designer.cs">
+      <DependentUpon>FormDormAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormBougenville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormBougenville.Designer.cs">
+      <DependentUpon>FormDormBougenville.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormCrystal.Designer.cs">
+      <DependentUpon>FormDormCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormEdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormEdel.Designer.cs">
+      <DependentUpon>FormDormEdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormGenset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormGenset.Designer.cs">
+      <DependentUpon>FormDormGenset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormGuest.Designer.cs">
+      <DependentUpon>FormDormGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormJasmineI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormJasmineI.Designer.cs">
+      <DependentUpon>FormDormJasmineI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormJasmineII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormJasmineII.Designer.cs">
+      <DependentUpon>FormDormJasmineII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinance.Designer.cs">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinanceFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinanceFee.Designer.cs">
+      <DependentUpon>FormFinanceFee.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHome.cs">
       <SubType>Form</SubType>
@@ -91,25 +295,195 @@
     <Compile Include="FormResProf.Designer.cs">
       <DependentUpon>FormResProf.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormResProfAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfAnnex.Designer.cs">
+      <DependentUpon>FormResProfAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfBougenville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfBougenville.Designer.cs">
+      <DependentUpon>FormResProfBougenville.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormResProfCrystal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormResProfCrystal.Designer.cs">
       <DependentUpon>FormResProfCrystal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormResProfCrystal123.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfCrystal123.Designer.cs">
+      <DependentUpon>FormResProfCrystal123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfCrystal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfCrystal2.Designer.cs">
+      <DependentUpon>FormResProfCrystal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfCrystal3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfCrystal3.Designer.cs">
+      <DependentUpon>FormResProfCrystal3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfEdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfEdel.Designer.cs">
+      <DependentUpon>FormResProfEdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfGenset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfGenset.Designer.cs">
+      <DependentUpon>FormResProfGenset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfGuest.Designer.cs">
+      <DependentUpon>FormResProfGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfJasmineII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfJasmineII.Designer.cs">
+      <DependentUpon>FormResProfJasmineII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfJasmineI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfJasmineI.Designer.cs">
+      <DependentUpon>FormResProfJasmineI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReportCrystal2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCrystal2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCrystal3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCrystal3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportGuest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportGuest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportAnnex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAnnex.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportBougenville.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBougenville.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCrystal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportEdel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportEdel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportGenset.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportGenset.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportJasmineI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportJasmineI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportJasmineII.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportJasmineII.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportMahasiswa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMahasiswa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRAnnex.resx">
+      <DependentUpon>FormCRAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRBougenville.resx">
+      <DependentUpon>FormCRBougenville.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRCrystal.resx">
+      <DependentUpon>FormCRCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRCrystal2.resx">
+      <DependentUpon>FormCRCrystal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRCrystal3.resx">
+      <DependentUpon>FormCRCrystal3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCREdel.resx">
+      <DependentUpon>FormCREdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRGenset.resx">
+      <DependentUpon>FormCRGenset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRGUest.resx">
+      <DependentUpon>FormCRGUest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRJasmineI.resx">
+      <DependentUpon>FormCRJasmineI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRJasmineII.resx">
+      <DependentUpon>FormCRJasmineII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRMahasiswa.resx">
+      <DependentUpon>FormCRMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormCrystal1.2.3.resx">
+      <DependentUpon>FormDormCrystal1.2.3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDashAdmin.resx">
       <DependentUpon>FormDashAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDashUserManage.resx">
       <DependentUpon>FormDashUserManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDashUserManageBooking.resx">
-      <DependentUpon>FormDashUserManageBooking.cs</DependentUpon>
+    <EmbeddedResource Include="FormDashUserManageDataDiri1.resx">
+      <DependentUpon>FormDashUserManageDataDiri1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDashUserManageDataDiri.resx">
-      <DependentUpon>FormDashUserManageDataDiri.cs</DependentUpon>
+    <EmbeddedResource Include="FormDorm.resx">
+      <DependentUpon>FormDorm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormAnnex.resx">
+      <DependentUpon>FormDormAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormBougenville.resx">
+      <DependentUpon>FormDormBougenville.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormCrystal.resx">
+      <DependentUpon>FormDormCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormEdel.resx">
+      <DependentUpon>FormDormEdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormGenset.resx">
+      <DependentUpon>FormDormGenset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormGuest.resx">
+      <DependentUpon>FormDormGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormJasmineI.resx">
+      <DependentUpon>FormDormJasmineI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormJasmineII.resx">
+      <DependentUpon>FormDormJasmineII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinance.resx">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinanceFee.resx">
+      <DependentUpon>FormFinanceFee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
@@ -120,8 +494,38 @@
     <EmbeddedResource Include="FormResProf.resx">
       <DependentUpon>FormResProf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfAnnex.resx">
+      <DependentUpon>FormResProfAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfBougenville.resx">
+      <DependentUpon>FormResProfBougenville.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormResProfCrystal.resx">
       <DependentUpon>FormResProfCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfCrystal123.resx">
+      <DependentUpon>FormResProfCrystal123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfCrystal2.resx">
+      <DependentUpon>FormResProfCrystal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfCrystal3.resx">
+      <DependentUpon>FormResProfCrystal3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfEdel.resx">
+      <DependentUpon>FormResProfEdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfGenset.resx">
+      <DependentUpon>FormResProfGenset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfGuest.resx">
+      <DependentUpon>FormResProfGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfJasmineII.resx">
+      <DependentUpon>FormResProfJasmineII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfJasmineI.resx">
+      <DependentUpon>FormResProfJasmineI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -144,6 +548,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

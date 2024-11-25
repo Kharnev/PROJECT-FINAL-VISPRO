@@ -85,6 +85,7 @@
             this.btnDorm.TabIndex = 3;
             this.btnDorm.Text = "Dormitories";
             this.btnDorm.UseVisualStyleBackColor = false;
+            this.btnDorm.Click += new System.EventHandler(this.btnDorm_Click);
             // 
             // btnFinance
             // 
@@ -97,6 +98,7 @@
             this.btnFinance.TabIndex = 4;
             this.btnFinance.Text = "Finance";
             this.btnFinance.UseVisualStyleBackColor = false;
+            this.btnFinance.Click += new System.EventHandler(this.btnFinance_Click);
             // 
             // btnUserManage
             // 

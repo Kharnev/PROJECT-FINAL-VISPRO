@@ -35,13 +35,26 @@ namespace PROJECT_FINAL_VISPRO
 
         private void btnDash_Click(object sender, EventArgs e)
         {
-
+            FormDashAdmin formDashAdmin = new FormDashAdmin();
+            formDashAdmin.Show();
         }
 
         private void btnResProf_Click(object sender, EventArgs e)
         {
             FormResProf formResProf = new FormResProf();
             formResProf.Show();
+        }
+
+        private void btnFinance_Click(object sender, EventArgs e)
+        {
+            FormFinance formFinance = new FormFinance();
+            formFinance.Show();
+        }
+
+        private void btnDorm_Click(object sender, EventArgs e)
+        {
+            FormDorm formDorm = new FormDorm();
+            formDorm.Show();
         }
     }
 }

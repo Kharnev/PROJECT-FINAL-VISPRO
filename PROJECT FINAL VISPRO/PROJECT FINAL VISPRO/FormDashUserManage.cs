@@ -19,8 +19,8 @@ namespace PROJECT_FINAL_VISPRO
 
         private void btnUserManage_Click(object sender, EventArgs e)
         {
-            FormDashUserManageDataDiri formDashUserManageDataDiri = new FormDashUserManageDataDiri();
-            formDashUserManageDataDiri.Show();
+            FormDashUserManageDataDiri1 formdashUserManageDataDiri1 = new FormDashUserManageDataDiri1();
+            formdashUserManageDataDiri1.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -39,6 +39,29 @@ namespace PROJECT_FINAL_VISPRO
         {
             FormDashAdmin formDashAdmin = new FormDashAdmin();
             formDashAdmin.Show();
+        }
+
+        private void btnFinance_Click(object sender, EventArgs e)
+        {
+            FormFinance formFinance = new FormFinance();
+            formFinance.Show();
+        }
+
+        private void btnDorm_Click(object sender, EventArgs e)
+        {
+            FormDorm formDorm = new FormDorm();
+            formDorm.Show();
+        }
+
+        private void FormDashUserManage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormCRMahasiswa formCRMahasiswa = new FormCRMahasiswa();
+            formCRMahasiswa.Show();
         }
     }
 }

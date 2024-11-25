@@ -48,7 +48,7 @@ namespace PROJECT_FINAL_VISPRO
         {
             try
             {
-                query = string.Format("select * from tbl_admin where username = '{0}'", txtUsername.Text);
+                query = string.Format("select * from tbl_admin where nama_admin = '{0}'", txtUsername.Text);
                 ds.Clear();
                 koneksi.Open();
                 perintah = new MySqlCommand(query, koneksi);
@@ -61,7 +61,7 @@ namespace PROJECT_FINAL_VISPRO
                     foreach (DataRow kolom in ds.Tables[0].Rows)
                     {
                         string sandi;
-                        sandi = kolom["password"].ToString();
+                        sandi = kolom["password_admin"].ToString();
                         if (sandi == txtPassword.Text)
                         {
                             FormDashAdmin formDashAdmin = new FormDashAdmin();
@@ -83,6 +83,12 @@ namespace PROJECT_FINAL_VISPRO
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            // Atur TextBox password agar karakter berubah menjadi bintang
+            txtPassword.PasswordChar = '*';
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

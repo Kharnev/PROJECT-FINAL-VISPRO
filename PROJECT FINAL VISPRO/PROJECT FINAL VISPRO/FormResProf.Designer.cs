@@ -29,31 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormResProf));
-            this.picResProf = new System.Windows.Forms.PictureBox();
             this.btnFinance = new System.Windows.Forms.Button();
             this.btnDorm = new System.Windows.Forms.Button();
             this.btnResProf = new System.Windows.Forms.Button();
             this.btnDash = new System.Windows.Forms.Button();
-            this.btnResCrystal = new System.Windows.Forms.Button();
-            this.btnResJasmineI = new System.Windows.Forms.Button();
-            this.btnResJasmineII = new System.Windows.Forms.Button();
-            this.btnResGenset = new System.Windows.Forms.Button();
-            this.btnResGuest = new System.Windows.Forms.Button();
-            this.btnResEdelweis = new System.Windows.Forms.Button();
-            this.btnResBougenville = new System.Windows.Forms.Button();
-            this.btnResAnnex = new System.Windows.Forms.Button();
+            this.btnResProfCrystal = new System.Windows.Forms.Button();
+            this.btnDormJasmineI = new System.Windows.Forms.Button();
+            this.btnDormJasmineII = new System.Windows.Forms.Button();
+            this.btnDormGenset = new System.Windows.Forms.Button();
+            this.btnDormGuest = new System.Windows.Forms.Button();
+            this.btnDormEdel = new System.Windows.Forms.Button();
+            this.btnDormBougenville = new System.Windows.Forms.Button();
+            this.btnDormAnnex = new System.Windows.Forms.Button();
+            this.picResProf = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picResProf)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picResProf
-            // 
-            this.picResProf.Image = ((System.Drawing.Image)(resources.GetObject("picResProf.Image")));
-            this.picResProf.Location = new System.Drawing.Point(1, 1);
-            this.picResProf.Name = "picResProf";
-            this.picResProf.Size = new System.Drawing.Size(1920, 1080);
-            this.picResProf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picResProf.TabIndex = 0;
-            this.picResProf.TabStop = false;
             // 
             // btnFinance
             // 
@@ -66,6 +56,7 @@
             this.btnFinance.TabIndex = 63;
             this.btnFinance.Text = "Finance";
             this.btnFinance.UseVisualStyleBackColor = false;
+            this.btnFinance.Click += new System.EventHandler(this.btnFinance_Click);
             // 
             // btnDorm
             // 
@@ -78,6 +69,7 @@
             this.btnDorm.TabIndex = 62;
             this.btnDorm.Text = "Dormitories";
             this.btnDorm.UseVisualStyleBackColor = false;
+            this.btnDorm.Click += new System.EventHandler(this.btnDorm_Click);
             // 
             // btnResProf
             // 
@@ -105,92 +97,119 @@
             this.btnDash.UseVisualStyleBackColor = false;
             this.btnDash.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btnResCrystal
+            // btnResProfCrystal
             // 
-            this.btnResCrystal.Location = new System.Drawing.Point(337, 267);
-            this.btnResCrystal.Name = "btnResCrystal";
-            this.btnResCrystal.Size = new System.Drawing.Size(287, 268);
-            this.btnResCrystal.TabIndex = 64;
-            this.btnResCrystal.Text = "button5";
-            this.btnResCrystal.UseVisualStyleBackColor = true;
-            this.btnResCrystal.Click += new System.EventHandler(this.btnResCrystal_Click);
+            this.btnResProfCrystal.BackColor = System.Drawing.Color.Transparent;
+            this.btnResProfCrystal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResProfCrystal.ForeColor = System.Drawing.Color.Black;
+            this.btnResProfCrystal.Location = new System.Drawing.Point(336, 434);
+            this.btnResProfCrystal.Name = "btnResProfCrystal";
+            this.btnResProfCrystal.Size = new System.Drawing.Size(295, 108);
+            this.btnResProfCrystal.TabIndex = 72;
+            this.btnResProfCrystal.Text = "Crystal\r\n\r\nBoys Dormitory\r\n";
+            this.btnResProfCrystal.UseVisualStyleBackColor = false;
+            this.btnResProfCrystal.Click += new System.EventHandler(this.btnDormCrystal_Click);
             // 
-            // btnResJasmineI
+            // btnDormJasmineI
             // 
-            this.btnResJasmineI.Location = new System.Drawing.Point(737, 267);
-            this.btnResJasmineI.Name = "btnResJasmineI";
-            this.btnResJasmineI.Size = new System.Drawing.Size(287, 268);
-            this.btnResJasmineI.TabIndex = 65;
-            this.btnResJasmineI.Text = "button5";
-            this.btnResJasmineI.UseVisualStyleBackColor = true;
+            this.btnDormJasmineI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormJasmineI.Location = new System.Drawing.Point(737, 435);
+            this.btnDormJasmineI.Name = "btnDormJasmineI";
+            this.btnDormJasmineI.Size = new System.Drawing.Size(287, 107);
+            this.btnDormJasmineI.TabIndex = 73;
+            this.btnDormJasmineI.Text = "Jasmine I\r\n\r\nGirls Dormitory";
+            this.btnDormJasmineI.UseVisualStyleBackColor = true;
+            this.btnDormJasmineI.Click += new System.EventHandler(this.btnDormJasmineI_Click);
             // 
-            // btnResJasmineII
+            // btnDormJasmineII
             // 
-            this.btnResJasmineII.Location = new System.Drawing.Point(1133, 267);
-            this.btnResJasmineII.Name = "btnResJasmineII";
-            this.btnResJasmineII.Size = new System.Drawing.Size(287, 268);
-            this.btnResJasmineII.TabIndex = 66;
-            this.btnResJasmineII.Text = "button5";
-            this.btnResJasmineII.UseVisualStyleBackColor = true;
+            this.btnDormJasmineII.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormJasmineII.Location = new System.Drawing.Point(1133, 438);
+            this.btnDormJasmineII.Name = "btnDormJasmineII";
+            this.btnDormJasmineII.Size = new System.Drawing.Size(287, 106);
+            this.btnDormJasmineII.TabIndex = 74;
+            this.btnDormJasmineII.Text = "Jasmine II\r\n\r\nGirls Dormitory\r\n";
+            this.btnDormJasmineII.UseVisualStyleBackColor = true;
+            this.btnDormJasmineII.Click += new System.EventHandler(this.btnDormJasmineII_Click);
             // 
-            // btnResGenset
+            // btnDormGenset
             // 
-            this.btnResGenset.Location = new System.Drawing.Point(1530, 267);
-            this.btnResGenset.Name = "btnResGenset";
-            this.btnResGenset.Size = new System.Drawing.Size(287, 268);
-            this.btnResGenset.TabIndex = 67;
-            this.btnResGenset.Text = "button5";
-            this.btnResGenset.UseVisualStyleBackColor = true;
+            this.btnDormGenset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormGenset.Location = new System.Drawing.Point(1529, 436);
+            this.btnDormGenset.Name = "btnDormGenset";
+            this.btnDormGenset.Size = new System.Drawing.Size(287, 106);
+            this.btnDormGenset.TabIndex = 78;
+            this.btnDormGenset.Text = "Genset\r\n\r\nBoys Dormitory\r\n";
+            this.btnDormGenset.UseVisualStyleBackColor = true;
+            this.btnDormGenset.Click += new System.EventHandler(this.btnDormGenset_Click);
             // 
-            // btnResGuest
+            // btnDormGuest
             // 
-            this.btnResGuest.Location = new System.Drawing.Point(337, 673);
-            this.btnResGuest.Name = "btnResGuest";
-            this.btnResGuest.Size = new System.Drawing.Size(287, 268);
-            this.btnResGuest.TabIndex = 68;
-            this.btnResGuest.Text = "button5";
-            this.btnResGuest.UseVisualStyleBackColor = true;
+            this.btnDormGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormGuest.Location = new System.Drawing.Point(336, 843);
+            this.btnDormGuest.Name = "btnDormGuest";
+            this.btnDormGuest.Size = new System.Drawing.Size(295, 110);
+            this.btnDormGuest.TabIndex = 75;
+            this.btnDormGuest.Text = "Guest House\r\n\r\nBoys Dormitory\r\n";
+            this.btnDormGuest.UseVisualStyleBackColor = true;
+            this.btnDormGuest.Click += new System.EventHandler(this.btnDormGuest_Click);
             // 
-            // btnResEdelweis
+            // btnDormEdel
             // 
-            this.btnResEdelweis.Location = new System.Drawing.Point(737, 673);
-            this.btnResEdelweis.Name = "btnResEdelweis";
-            this.btnResEdelweis.Size = new System.Drawing.Size(287, 268);
-            this.btnResEdelweis.TabIndex = 69;
-            this.btnResEdelweis.Text = "button5";
-            this.btnResEdelweis.UseVisualStyleBackColor = true;
+            this.btnDormEdel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormEdel.Location = new System.Drawing.Point(737, 843);
+            this.btnDormEdel.Name = "btnDormEdel";
+            this.btnDormEdel.Size = new System.Drawing.Size(287, 110);
+            this.btnDormEdel.TabIndex = 76;
+            this.btnDormEdel.Text = "Edelweis\r\n\r\nBoys Dormitory\r\n";
+            this.btnDormEdel.UseVisualStyleBackColor = true;
+            this.btnDormEdel.Click += new System.EventHandler(this.btnDormEdel_Click);
             // 
-            // btnResBougenville
+            // btnDormBougenville
             // 
-            this.btnResBougenville.Location = new System.Drawing.Point(1133, 673);
-            this.btnResBougenville.Name = "btnResBougenville";
-            this.btnResBougenville.Size = new System.Drawing.Size(287, 268);
-            this.btnResBougenville.TabIndex = 70;
-            this.btnResBougenville.Text = "button5";
-            this.btnResBougenville.UseVisualStyleBackColor = true;
+            this.btnDormBougenville.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormBougenville.Location = new System.Drawing.Point(1132, 843);
+            this.btnDormBougenville.Name = "btnDormBougenville";
+            this.btnDormBougenville.Size = new System.Drawing.Size(287, 109);
+            this.btnDormBougenville.TabIndex = 77;
+            this.btnDormBougenville.Text = "Bougenville\r\n\r\nBoys Dormitory\r\n";
+            this.btnDormBougenville.UseVisualStyleBackColor = true;
+            this.btnDormBougenville.Click += new System.EventHandler(this.btnDormBougenville_Click);
             // 
-            // btnResAnnex
+            // btnDormAnnex
             // 
-            this.btnResAnnex.Location = new System.Drawing.Point(1530, 673);
-            this.btnResAnnex.Name = "btnResAnnex";
-            this.btnResAnnex.Size = new System.Drawing.Size(287, 268);
-            this.btnResAnnex.TabIndex = 71;
-            this.btnResAnnex.Text = "button5";
-            this.btnResAnnex.UseVisualStyleBackColor = true;
+            this.btnDormAnnex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDormAnnex.Location = new System.Drawing.Point(1529, 843);
+            this.btnDormAnnex.Name = "btnDormAnnex";
+            this.btnDormAnnex.Size = new System.Drawing.Size(287, 109);
+            this.btnDormAnnex.TabIndex = 79;
+            this.btnDormAnnex.Text = "Annex\r\n\r\nGirls Dormitory\r\n";
+            this.btnDormAnnex.UseVisualStyleBackColor = true;
+            this.btnDormAnnex.Click += new System.EventHandler(this.btnDormAnnex_Click);
+            // 
+            // picResProf
+            // 
+            this.picResProf.Image = ((System.Drawing.Image)(resources.GetObject("picResProf.Image")));
+            this.picResProf.Location = new System.Drawing.Point(1, 1);
+            this.picResProf.Name = "picResProf";
+            this.picResProf.Size = new System.Drawing.Size(1920, 1080);
+            this.picResProf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picResProf.TabIndex = 0;
+            this.picResProf.TabStop = false;
             // 
             // FormResProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.btnResAnnex);
-            this.Controls.Add(this.btnResBougenville);
-            this.Controls.Add(this.btnResEdelweis);
-            this.Controls.Add(this.btnResGuest);
-            this.Controls.Add(this.btnResGenset);
-            this.Controls.Add(this.btnResJasmineII);
-            this.Controls.Add(this.btnResJasmineI);
-            this.Controls.Add(this.btnResCrystal);
+            this.Controls.Add(this.btnResProfCrystal);
+            this.Controls.Add(this.btnDormJasmineI);
+            this.Controls.Add(this.btnDormJasmineII);
+            this.Controls.Add(this.btnDormGenset);
+            this.Controls.Add(this.btnDormGuest);
+            this.Controls.Add(this.btnDormEdel);
+            this.Controls.Add(this.btnDormBougenville);
+            this.Controls.Add(this.btnDormAnnex);
             this.Controls.Add(this.btnFinance);
             this.Controls.Add(this.btnDorm);
             this.Controls.Add(this.btnResProf);
@@ -207,19 +226,18 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picResProf;
         private System.Windows.Forms.Button btnFinance;
         private System.Windows.Forms.Button btnDorm;
         private System.Windows.Forms.Button btnResProf;
         private System.Windows.Forms.Button btnDash;
-        private System.Windows.Forms.Button btnResCrystal;
-        private System.Windows.Forms.Button btnResJasmineI;
-        private System.Windows.Forms.Button btnResJasmineII;
-        private System.Windows.Forms.Button btnResGenset;
-        private System.Windows.Forms.Button btnResGuest;
-        private System.Windows.Forms.Button btnResEdelweis;
-        private System.Windows.Forms.Button btnResBougenville;
-        private System.Windows.Forms.Button btnResAnnex;
+        private System.Windows.Forms.Button btnResProfCrystal;
+        private System.Windows.Forms.Button btnDormJasmineI;
+        private System.Windows.Forms.Button btnDormJasmineII;
+        private System.Windows.Forms.Button btnDormGenset;
+        private System.Windows.Forms.Button btnDormGuest;
+        private System.Windows.Forms.Button btnDormEdel;
+        private System.Windows.Forms.Button btnDormBougenville;
+        private System.Windows.Forms.Button btnDormAnnex;
+        private System.Windows.Forms.PictureBox picResProf;
     }
 }
